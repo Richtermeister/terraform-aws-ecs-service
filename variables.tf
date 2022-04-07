@@ -292,3 +292,9 @@ variable platform_version {
   description = "The platform version on which to run your service. Only applicable for launch_type set to FARGATE. Defaults to LATEST."
   default     = "LATEST"
 }
+
+variable ignore_task_definition {
+  description = "Whether to ignore task definition changes. This is useful if you use a CI flow outside of Terraform."
+  type        = bool
+  default     = false
+}
